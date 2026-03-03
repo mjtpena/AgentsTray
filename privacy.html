@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Agent Tray</title>
+    <style>
+        :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+        h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 32px; }
+        h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+        p, li { color: var(--muted); font-size: 0.95rem; margin-bottom: 12px; }
+        ul { padding-left: 24px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back { margin-bottom: 24px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back" href="/agenttray-site/">&larr; Back to Agent Tray</a>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: March 3, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Agent Tray ("the App") is a Windows desktop application that monitors AI agent usage. Your privacy is important to us. This policy explains what data the App accesses and how it is handled.</p>
+
+        <h2>Data Collection</h2>
+        <p><strong>Agent Tray does not collect, transmit, or store any personal data on external servers.</strong> All data remains on your local machine.</p>
+
+        <h2>Data Stored Locally</h2>
+        <p>The App stores the following data locally on your device:</p>
+        <ul>
+            <li><strong>Application settings</strong> — your provider preferences, alert thresholds, and UI preferences are saved in a JSON file at <code>%LocalAppData%\AgentTray\settings.json</code>.</li>
+            <li><strong>API credentials</strong> — API keys and authentication tokens you provide are stored securely in <strong>Windows Credential Manager</strong>, the operating system's built-in secrets vault. They are never written to plain-text files.</li>
+            <li><strong>Usage data</strong> — usage snapshots returned by provider APIs are held in memory only for display purposes and are not persisted to disk.</li>
+        </ul>
+
+        <h2>Network Requests</h2>
+        <p>The App makes outbound HTTPS requests only to the provider APIs you have enabled (e.g., Anthropic, GitHub, OpenAI) to retrieve your usage data. No data is sent to any server operated by the App developer.</p>
+
+        <h2>Cookies &amp; Browser Data</h2>
+        <p>For providers that use browser-based authentication (e.g., Cursor), the App may read authentication cookies from your local browser profile. This data is read locally and is never transmitted externally.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>The App does not integrate with any analytics, advertising, or tracking services. There are no telemetry or crash-reporting frameworks.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>The App is not directed at children under the age of 13 and does not knowingly collect information from children.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy, please contact:</p>
+        <p>Michael John Peña — <a href="https://michaeljohnpena.com/">michaeljohnpena.com</a></p>
+    </div>
+</body>
+</html>

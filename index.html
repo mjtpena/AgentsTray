@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Tray</title>
+    <style>
+        :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+        header { text-align: center; margin-bottom: 48px; }
+        .logo { display: grid; grid-template-columns: 1fr 1fr; width: 80px; height: 80px; margin: 0 auto 20px; border-radius: 16px; overflow: hidden; }
+        .logo div:nth-child(1) { background: #D97757; }
+        .logo div:nth-child(2) { background: #6E40C9; }
+        .logo div:nth-child(3) { background: #10A37F; }
+        .logo div:nth-child(4) { background: #8E75B2; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+        .tagline { color: var(--muted); font-size: 1.1rem; }
+        .badge { display: inline-block; background: var(--accent); color: var(--bg); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-top: 12px; }
+        .cards { display: grid; gap: 16px; margin: 32px 0; }
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+        .card h2 { font-size: 1.1rem; margin-bottom: 8px; }
+        .card p { color: var(--muted); font-size: 0.95rem; }
+        .providers { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .providers span { background: var(--bg); border: 1px solid var(--border); padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; }
+        .links { display: flex; gap: 16px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
+        .links a { color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+        .links a:hover { text-decoration: underline; }
+        footer { text-align: center; margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+        .store-btn { display: inline-block; margin-top: 20px; padding: 12px 28px; background: var(--accent); color: var(--bg); border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+        .store-btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><div></div><div></div><div></div><div></div></div>
+            <h1>Agent Tray</h1>
+            <p class="tagline">Monitor your AI agent usage from the Windows system tray</p>
+            <span class="badge">Windows 10/11</span>
+        </header>
+
+        <div class="cards">
+            <div class="card">
+                <h2>📊 Real-time Usage Monitoring</h2>
+                <p>Track API calls, token usage, rate limits, and costs across all your AI providers in one glance.</p>
+            </div>
+            <div class="card">
+                <h2>🔔 Smart Alerts</h2>
+                <p>Get notified when usage is running low or a provider experiences an outage — before it impacts your work.</p>
+            </div>
+            <div class="card">
+                <h2>🔐 Secure by Design</h2>
+                <p>API keys are stored in Windows Credential Manager — never in plain text. No data leaves your machine.</p>
+            </div>
+            <div class="card">
+                <h2>🤖 16 Providers Supported</h2>
+                <p>From the biggest names to emerging tools — all in one dashboard.</p>
+                <div class="providers">
+                    <span>Claude</span><span>Copilot</span><span>Cursor</span><span>Codex</span>
+                    <span>Gemini</span><span>OpenRouter</span><span>Amp</span><span>Kiro</span>
+                    <span>Augment</span><span>JetBrains</span><span>Vertex AI</span><span>Kimi</span>
+                    <span>Kimi K2</span><span>Antigravity</span><span>Droid</span><span>Zai</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <a class="store-btn" href="https://apps.microsoft.com/detail/9N8QDH2SJ8P3">Get it on the Microsoft Store</a>
+        </div>
+
+        <div class="links">
+            <a href="/agenttray-site/privacy">Privacy Policy</a>
+            <a href="/agenttray-site/terms">Terms of Use</a>
+            <a href="https://michaeljohnpena.com/">Author</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Michael John Peña. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
